@@ -1,0 +1,9 @@
+set(A "1")
+set(B "1")
+
+while(A LESS "100000")
+    message("${A}")
+    math(EXPR T "${A} + ${B}")
+    set(A "${B}")
+    set(B "${T}")
+endwhile()
